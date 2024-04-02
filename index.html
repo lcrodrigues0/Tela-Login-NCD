@@ -9,32 +9,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="d-flex align-items-center justify-content-center bg-dark-subtle">
-    <div class="login-container d-flex align-items-center justify-content-center bg-body-secondary border border-secondary-subtle border-2 rounded shadow-lg">
-        <div class="left-side bg-light d-flex align-items-center justify-content-center p-3">
-            <img class="img-fluid" src="imgs/ncd-logo-colorida.png" alt="Logo Colorida do NCD">
-        </div>
-        <div class="right-side p-3 d-flex align-items-center justify-content-center">
-            <div class="form-container d-flex flex-column justify-content-center">
-                <h2 class="text-center mb-5 fw-">Login</h2>
-                <form class="d-flex flex-column justify-content-center align-items-center mb-4" action="#" method="" class="form-login">
-                    <div class="form-floating my-1">
-                        <input type="email" class="form-control form-control-lg" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email</label>
-                    </div>
-                    <div class="form-floating my-1">
-                        <input type="password" class="form-control form-control-lg" id="floatingPassword" placeholder="Senha">
-                        <label for="floatingPassword">Senha</label>
-                    </div>
-                    <div class="form-check text-start my-1">
-                        <input type="checkbox" class="form-check-input" id="flexCheckDefault" placeholder="Senha">
-                        <label class="form-check-label" for="flexCheckDefault">Lembrar-me</label>
-                    </div>
-                    <button class="btn btn-primary mt-3" type="submit">Entrar</button>
-                </form>
+<body>
+    <div class="background-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#458dbf" fill-opacity="1" d="M0,288L48,288C96,288,192,288,288,266.7C384,245,480,203,576,181.3C672,160,768,160,864,154.7C960,149,1056,139,1152,133.3C1248,128,1344,128,1392,128L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+        </svg>
+    </div>
+
+    <div class="foreground d-flex align-items-center justify-content-center bg-dark-subtle">
+        <div class="login-container d-flex align-items-center justify-content-center bg-body-secondary border border-secondary-subtle border-2 rounded shadow-lg">
+            <div class="left-side bg-light d-flex align-items-center justify-content-center p-3 rounded">
+                <img class="img-fluid" src="imgs/ncd-logo-colorida.png" alt="Logo Colorida do NCD">
+            </div>
+            <div class="right-side p-3 d-flex align-items-center justify-content-center">
+                <div class="form-container d-flex flex-column justify-content-center align-items-center mt-4 mb-2">
+                    <h2 class="text-center mb-4 fw- fs-4 text-body-secondary">Faça o seu login</h2>
+                    <form class="mb-2" action="#" method="" class="form-login">
+                        <div class="form-floating my-1">
+                            <input type="email" class="form-control form-control-lg custom-input" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email</label>
+                        </div>
+                        <div class="form-floating my-1">
+                            <input type="password" class="form-control form-control-lg custom-input" id="floatingPassword" placeholder="Senha">
+                            <label for="floatingPassword">Senha</label>
+                        </div>
+                        <div class="form-check text-start mt-1">
+                            <input type="checkbox" class="form-check-input" id="flexCheckDefault" placeholder="Senha">
+                            <label class="form-check-label" for="flexCheckDefault">Lembrar-me</label>
+                        </div>
+                        <button class="btn btn-outline-secondary mt-3" type="submit" style="width: 100%; max-width: 250px">Entrar</button>
+                    </form>
+                    <p><a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Esqueceu a senha?</a></p>
+                </div>
             </div>
         </div>
     </div>
-    
 </body>
 </html>

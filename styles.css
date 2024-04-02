@@ -2,9 +2,21 @@ html, body {
     height: 100%;
 }
 
+.background-top {
+    height: 10%;
+    width: 100%
+}
+
+.foreground {
+    height: 100%;
+}
+
 .login-container {
     height: 50%;
+    min-height: 384px;
     width: 50%;
+
+    background: linear-gradient(90deg, #fcfcfd, #e9ecef);
 }
 
 .login-container .left-side{
@@ -19,5 +31,5 @@ html, body {
 
 .form-container{
     height: 100%;
-    width: 100%;
+    width: 60%;
 }
