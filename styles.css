@@ -1,14 +1,34 @@
 html, body {
     height: 100%;
+    overflow: hidden;
 }
 
 .background-top {
-    height: 10%;
-    width: 100%
+    height: 15%;
+    width: 100%;
+
+    position: relative;
+}
+
+.background-top img{
+    width: 100%;
+
+    position: absolute;
+    top: -40px
+}
+
+.background-bottom {
+    width: 100%;
+
+    position: relative; 
+}
+
+.background-bottom img{
+    width: 100%;
 }
 
 .foreground {
-    height: 100%;
+    height: 55%;
 }
 
 .login-container {
@@ -16,7 +36,7 @@ html, body {
     min-height: 384px;
     width: 50%;
 
-    background: linear-gradient(90deg, #fcfcfd, #e9ecef);
+    margin-top: 5%;
 }
 
 .login-container .left-side{
